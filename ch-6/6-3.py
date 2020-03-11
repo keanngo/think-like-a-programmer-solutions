@@ -4,6 +4,8 @@ def targetNumberOccurances(array, target):
             return 1
         else:
             return 0
+    else:
+        return 0
     
     lastValue = array[len(array) - 1]
     array.pop()
@@ -13,5 +15,5 @@ def targetNumberOccurances(array, target):
         return targetNumberOccurances(array, target)
 
 
-arr = [1,2,3,2,1,2,1,1,1,1]
+arr = []
 print(targetNumberOccurances(arr, 2))
